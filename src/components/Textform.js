@@ -14,7 +14,7 @@ export default function Textform(props) {
                 {console.log(text)}
             </div>
             
-            <button type="button" className="btn btn-primary" onClick={()=>{text.toUpperCase()}}>Convert To Upper</button>
+            <button type="button" className="btn btn-primary" onClick={()=>{setText(text.toUpperCase())}}>Convert To Upper</button>
         </div>
     )
 }
