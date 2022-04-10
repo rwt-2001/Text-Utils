@@ -7,7 +7,7 @@ import Alert from './components/Alert';
 import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
 
 const title = "TXT Here!";
-const about = "About"
+
 
 function App() {
   const [mode,setMode] = useState("light");
@@ -37,7 +37,7 @@ function App() {
 
   return (<>
    <Router>
-    <Navbar title={title}  about={about} mode={mode} modeInv={modeInv} handlemode={handleMode}/>
+    <Navbar title={title}  mode={mode} modeInv={modeInv} handlemode={handleMode}/>
     <Alert alert={alert} />
     <div className="container"  >
      
