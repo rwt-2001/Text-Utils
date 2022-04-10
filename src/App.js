@@ -2,11 +2,11 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Textform from './components/Textform';
 import { useState } from 'react';
-import About from "./components/About"
+
 import Alert from './components/Alert';
 import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
 
-const title = "TEXT PLZ";
+const title = "TXT Here!";
 const about = "About"
 
 function App() {
@@ -42,15 +42,10 @@ function App() {
     <div className="container"  >
      
     <Switch>
-      <Route path="/about">
-        <About/>
-      </Route>
       <Route path="/">
         <Textform mode={mode}/>
       </Route>
     </Switch>
-    
-      
     
     </div>
     </Router>
