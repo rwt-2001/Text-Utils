@@ -17,7 +17,7 @@ export default function Textform(props) {
     }
     
     const summarize=async(text)=>{
-        deepai.setApiKey('2aef5b19-2ad3-47cc-b684-9ebca46fda08');
+        deepai.setApiKey('APIKEY HERE');
         var resp = await deepai.callStandardApi("summarization", {
             text: text,
         });
@@ -31,7 +31,7 @@ export default function Textform(props) {
         return charArray.length;
     }
     const gen_Text=async(text)=>{
-        deepai.setApiKey('2aef5b19-2ad3-47cc-b684-9ebca46fda08');
+        deepai.setApiKey('APIKEY HERE');
         var resp = await deepai.callStandardApi("text-generator", {
             text: text,
         });
